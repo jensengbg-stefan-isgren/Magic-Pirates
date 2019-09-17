@@ -1,0 +1,557 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+p {
+  font-family: 'Fira Sans',sans-serif;
+}
+
+/* buttons */
+
+.btn-primary {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  padding: 12px 40px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Fira Sans',sans-serif;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 900;
+}
+
+/* top section */
+
+  .top-section {
+  min-height: 444px;
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-areas:
+    "top-section top-section top-section top-right top-right top-right"
+    "top-section top-section top-section bottom-right bottom-right bottom-right";
+}
+
+.top-section h1 {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+  font-size: 45px;
+  margin-top: 40px;
+}
+
+.left {
+  grid-area: top-section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#C7DDEA;
+  position: relative;
+  padding: 0px 100px 80px 80px;
+}
+
+.left p {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.left a {
+  margin-top: 40px;
+  margin-right:auto;
+}
+
+.left span {
+  color: white;
+}
+
+.family-photo {
+  position: absolute;
+  bottom:0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+}
+
+.top {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.top-right {
+  grid-area: top-right;
+  background-color: #F17949;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+  background-color: #FAB131;
+}
+
+/* navbar */
+
+.navbar {
+  display:flex;
+  list-style-type: none;
+  justify-content: space-around;
+  height: 4rem;
+  align-items: center;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-family: 'Fira Sans',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.4;
+}
+
+.navbar li a.home {
+  opacity: 1;
+}
+
+
+/* main section */
+
+.middle-top {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #A9A19E;
+}
+
+.middle-top,.middle-bottom {
+  min-height: 80vh;
+}
+
+.top-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60vh;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  }
+
+.left-info,
+.right-info {
+  padding: 0 90px;
+}
+
+.left-info h2 {
+  font-family: 'Frank Ruhl Libre',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  color:white;
+  margin-bottom: 50px;
+}
+
+.right-info p {
+  font-family: 'Fira Sans',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.middle-bottom {
+  background-color: #FAB131;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.middle-bottom p:nth-of-type(2){
+  margin-bottom: 100px;
+} 
+
+.middle-bottom p {
+  max-width: 40%;
+  line-height: 20px;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.middle-bottom h2 {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  color: white;
+}
+
+/* card section */
+
+.card-section {
+  display:flex;
+  justify-content: center;
+  margin-bottom: -180px;
+}
+
+.card {
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 18vw;
+  min-height: 38vh;
+  padding: 10px;
+  text-align: center;
+  margin: 30px;
+}
+
+.card h3 {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.card p {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.picture-box {
+  height: 20vh;
+  width: 100%;
+  margin: -40px auto;
+}
+
+.picture-box-l {
+  background-color: #C7DDEA;
+}
+
+.picture-box-m {
+  background-color: #FAB131;
+}
+
+.picture-box-r {
+  background-color: #F17949;
+}
+
+img {
+  height: 100%;
+}
+
+.card h3 {
+  margin-top: 50px;
+}
+
+.card p {
+  margin-top: 20px 0;
+}
+
+/* start of box-container */
+  
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    align-content: space-between;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text {
+    font-family: 'Fira Sans',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px 0 0 30px;
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .zero {
+    background-color: #C7DDEA;
+  }
+
+  .zero p {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+
+  .one,
+  .two,
+  .five {
+    background-color: #FFFFFF;
+  }
+
+  .two {
+    background-color: #EBEBEB;
+  }
+
+  .four {
+    background-color: #F17949;
+  }
+
+  /* back to top section */
+  
+  .back-to-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #A9A19E;
+    padding: 10px 0px;
+  }
+
+  .back-to-top p {
+    font-family: 'Fira Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+   }
+
+   /* start of footer section */
+   
+   footer {
+     height: 40vh;
+     background-color: #777574;  
+     }
+
+     /* start contact.html */
+  
+    .wrapper-contact {
+      max-width: 1000px;
+      margin: auto;
+      display:grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "header-contact header-contact header-contact header-contact header-contact header-contact" 
+        "nav-contact nav-contact nav-contact nav-contact nav-contact nav-contact"
+        "contact contact contact contact contact contact"
+        "map map map map map map"
+        "footer footer footer footer footer footer"; 
+        
+    }
+
+    .header-contact {
+      grid-area: header-contact;
+      min-height: 400px;
+      background-color: #C7DDEA;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-contact h1 {
+      font-family: 'Frank Ruhl Libre',sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 45px;
+    }
+
+    .man-child {
+      position: absolute;
+      right: 100px;
+      height: 80%;
+      bottom: 0;
+    }
+
+    /* start of nav */
+
+    .nav-contact {
+      grid-area: nav-contact;
+      max-height: 80px;
+      background-color: white;
+    }
+
+    /* start contact */
+
+    .contact {
+      grid-area: contact;
+      min-height: 544px;
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      background: #A9A19E
+    }
+
+    .contact-left {
+      height: 50vh;
+      width:50%;
+      padding: 0 40px 0 40px;
+    }
+
+    .contact-left h2 {
+      color: white;
+      font-family: 'Frank Ruhl Libre',sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 45px;
+      padding: 20px;
+    }
+
+    /* visit box */
+    .map {
+      grid-area: map;
+      min-height: 400px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      background-image: url(/img/map-contact.png);
+      background-position: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .visit-box {
+      background: #FAB131;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+      min-height: 206px;
+      min-width: 323px;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+      margin: -60px 0 0 80px;
+    }
+
+    .visit-box h3 {
+      font-family: 'Frank Ruhl Libre',sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 45px;
+      color: white;
+      text-align: center;
+    }
+
+    .visit-box p {
+      font-family: 'Fira Sans',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: white;
+      padding: 0 20px;
+    }
+    
+    fieldset {
+      border: 0;
+      display:flex;
+      flex-direction: column;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+    
+    .needle-img {
+     height: 100px;
+     margin-right: 100px;
+    }
+  
+    input[type="text"]
+    {
+      border: 0;
+      min-width: 334px;
+      background: #FEFEFE;
+      border-radius: 2px;
+      min-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      border:0;
+    }
+
+    textarea {
+      min-height: 166px;
+      background: #FEFEFE;
+      border-radius: 2px;
+      min-width: 334px;
+      padding: 10px;
+    }
+
+    textarea::placeholder {
+      color: black;
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    label {
+      font-family: 'Fira Sans',sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      margin-bottom: 5px;
+      opacity: .7;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      text-transform: uppercase;
+      margin-left: auto;
+    }
+
+    .navbar li a.contact-menu {
+      opacity: 1;
+    }
